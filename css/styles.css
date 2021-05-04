@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+:root {
+  --color1: #687980;
+}
+
+body {
+  background: #f8f5f1;
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  position: relative;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #6b6b6b;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+section {
+  padding: 2em 3em;
+}
+
+hr {
+  height: 2px;
+  width: 40%;
+  border-width: 0;
+  background: black;
+}
+
+h2 {
+  margin: 0;
+}
+
+.hero {
+  text-align: center;
+}
+
+.nav-bar {
+  background: white;
+  padding: 1em;
+  height: 5vh;
+}
+
+.nav-bar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-bar .container .name {
+  margin: 0;
+  position: relative;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.nav-bar .container .name span.surname {
+  color: var(--color1);
+}
+
+.nav-bar .container .name span.under-name {
+  position: absolute;
+  top: 30px;
+  font-size: 1.1rem;
+  right: 0px;
+  font-family: Allura;
+}
+
+.nav-bar .container nav {
+  display: none;
+}
+
+.nav-bar .container .contact-btn {
+  background: var(--color1);
+  color: white;
+  border: 2px solid black;
+  padding: 0.1em 0.4em;
+  border-radius: 3em;
+}
+
+.nav-bar .container .contact-btn:hover {
+  background: blue;
+}
+
+.hero {
+  padding-bottom: 7vh;
+}
+
+.hero .main {
+  display: block;
+}
+
+.hero .main .first-column {
+  background: white;
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.4rem;
+  -webkit-box-shadow: 5px 4px 8px 3px rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 4px 8px 3px rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+}
+
+.hero .main .first-column img {
+  width: 12rem;
+  height: 12rem;
+  border: 2px solid var(--color1);
+  border-radius: 7rem;
+  background: #928c8c;
+}
+
+.hero .main .first-column p {
+  text-transform: uppercase;
+}
+
+.hero .main .first-column h3 {
+  text-align: left;
+  margin-bottom: 0.7rem;
+}
+
+.hero .main .first-column table td {
+  text-align: left;
+  width: 18em;
+}
+
+.hero .main .first-column:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 34rem;
+  background: var(--color1);
+  left: 0;
+  z-index: -1;
+}
+
+.hero .main .second-column {
+  margin-top: 2.5rem;
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.4rem;
+  text-align: left;
+}
+
+.hero .main .second-column p {
+  margin-top: 2rem;
+}
+
+.hero .main .second-column span {
+  font-size: 2rem;
+}
+
+.comming-soon {
+  font-family: "Permanent Marker";
+  font-weight: bold;
+  font-size: 3rem;
+  color: var(--color1);
+  margin-top: 2rem;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 7vh;
+}
+
+footer .container-bottom .contact-me {
+  color: var(--color1);
+}
+
+@media only screen and (min-width: 820px) {
+  .hero .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero .main .second-column .first-column {
+    margin-right: 0;
+  }
+  .hero .main .second-column span {
+    font-size: 8rem;
+    position: absolute;
+    top: 11rem;
+    z-index: -1;
+    color: var(--color1);
+  }
+  .comming-soon {
+    font-size: 6rem;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  body .container-sec {
+    width: 1080px;
+    margin: 0 auto;
+  }
+  .comming-soon {
+    margin-top: 8rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
